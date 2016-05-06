@@ -74,12 +74,9 @@ status:
 	git remote -v
 	git status
 
-testx:
-	cd examples; make testx
+test:
+	cd examples; make test
 	@echo
-	cd exercises; make testx
-
-testy:
-	cd examples; make testy
+	cd exercises; make test
 	@echo
-	cd exercises; make testy
+	cd collatz; make test
