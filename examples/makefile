@@ -22,7 +22,7 @@ FILES :=              \
     Dicts
 
 %.pyt: %.py
-	pylint $<
+	-pylint $<
 
 %.pyx: %.py
 	./$<

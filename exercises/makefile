@@ -12,7 +12,7 @@ FILES :=            \
 #    TheatreSquareT
 
 %.pyt: %.py
-	pylint $<
+	-pylint $<
 
 %.pyx: %.py
 	coverage3 run --branch $<
@@ -20,9 +20,6 @@ FILES :=            \
 
 .pylintrc:
 	pylint --disable=bad-whitespace,missing-docstring,invalid-name,locally-disabled,pointless-string-statement --reports=n --generate-rcfile > $@
-
-RMSET.pyy: RMSET.py
-	./$<
 
 clean:
 	rm -f  .coverage
