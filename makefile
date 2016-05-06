@@ -78,5 +78,3 @@ test:
 	cd examples; make test
 	@echo
 	cd exercises; make test
-	@echo
-	cd collatz; make test
