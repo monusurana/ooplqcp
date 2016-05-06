@@ -15,45 +15,48 @@ init:
 	git push -u origin master
 
 pull:
-	@rsync -r -t -u -v --delete             \
-    --include "Hello.py"                    \
-    --include "Assertions.py"               \
-    --include "UnitTests1.py"               \
-    --include "UnitTests2.py"               \
-    --include "UnitTests3.py"               \
-    --include "Exceptions.py"               \
-    --include "Types.py"                    \
-    --include "Operators.py"                \
-    --include "Variables.py"                \
-    --include "Iteration.py"                \
-    --include "Yield.py"                    \
-    --include "Lambda.py"                   \
-    --include "Comprehensions.py"           \
-    --include "Iterables.py"                \
-    --include "FunctionKeywords.py"         \
-    --include "FunctionDefaults.py"         \
-    --include "FunctionUnpacking.py"        \
-    --include "FunctionTuple.py"            \
-    --include "FunctionDict.py"             \
-    --include "Sequences.py"                \
-    --include "Lists.py"                    \
-    --include "Strings.py"                  \
-    --include "Sets.py"                     \
-    --include "Dicts.py"                    \
-    --exclude "*"                           \
+	@rsync -r -t -u -v --delete              \
+    --include "Hello.py"                     \
+    --include "Assertions.py"                \
+    --include "UnitTests1.py"                \
+    --include "UnitTests2.py"                \
+    --include "UnitTests3.py"                \
+    --include "Coverage1.py"                 \
+    --include "Coverage2.py"                 \
+    --include "Coverage3.py"                 \
+    --include "Exceptions.py"                \
+    --include "Types.py"                     \
+    --include "Operators.py"                 \
+    --include "Variables.py"                 \
+    --include "Iteration.py"                 \
+    --include "Yield.py"                     \
+    --include "Lambda.py"                    \
+    --include "Comprehensions.py"            \
+    --include "Iterables.py"                 \
+    --include "FunctionKeywords.py"          \
+    --include "FunctionDefaults.py"          \
+    --include "FunctionUnpacking.py"         \
+    --include "FunctionTuple.py"             \
+    --include "FunctionDict.py"              \
+    --include "Sequences.py"                 \
+    --include "Lists.py"                     \
+    --include "Strings.py"                   \
+    --include "Sets.py"                      \
+    --include "Dicts.py"                     \
+    --exclude "*"                            \
     ../../../examples/python/ examples
-	@rsync -r -t -u -v --delete             \
-    --include "IsPrime1.py"                 \
-    --include "IsPrime1T.py"                \
-    --include "FactorialT.py"               \
-    --include "ReduceT.py"                  \
-    --include "DigitsIteratorT.py"          \
-    --include "DigitsT.py"                  \
-    --include "MapT.py"                     \
-    --include "ComplexT.py"                 \
-    --include "Reduce2T.py"                 \
-    --include "TheatreSquareT.py"           \
-    --exclude "*"                           \
+	@rsync -r -t -u -v --delete              \
+    --include "IsPrime1.py"                  \
+    --include "IsPrime1T.py"                 \
+    --include "FactorialT.py"                \
+    --include "ReduceT.py"                   \
+    --include "DigitsIteratorT.py"           \
+    --include "DigitsT.py"                   \
+    --include "MapT.py"                      \
+    --include "ComplexT.py"                  \
+    --include "Reduce2T.py"                  \
+    --include "TheatreSquareT.py"            \
+    --exclude "*"                            \
     ../../../exercises/python/ exercises
 
 push:
