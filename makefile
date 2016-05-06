@@ -34,9 +34,7 @@ pull:
     --include "FunctionTuple.py"             \
     --include "FunctionDict.py"              \
     --include "GlobalVariables.py"           \
-    --include "ClassVariables.py"            \
-    --include "InstanceVariables.py"         \
-    --include "Methods.py"                   \
+    --include "Classes.py"                   \
     --include "Iteration.py"                 \
     --include "Yield.py"                     \
     --include "Lambda.py"                    \

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 # ----------
-# Methods.py
+# Classes.py
 # ----------
 
-print("Methods.py")
+print("Classes.py")
 
 class A :
     __cv = 0
@@ -15,7 +15,8 @@ class A :
 #       cm()           # NameError: global name 'cm' is not defined
         A.cm()
 #       im()           # NameError: global name 'im' is not defined
-#       A.im()         # TypeError: unbound method im() must be called with A instance as first argument (got nothing instead)
+#       A.im()         # TypeError: unbound method im() must be called with A instance
+                       #            as first argument (got nothing instead)
         self.im()
 
     @staticmethod
@@ -32,7 +33,8 @@ class A :
         self.cm()      # misleading
 
 A.cm()
-#A.im() # TypeError: unbound method im() must be called with A instance as first argument (got nothing instead)
+#A.im() # TypeError: unbound method im() must be called with A instance
+        # as first argument (got nothing instead)
 
 x = A()
 x.cm()   # misleading

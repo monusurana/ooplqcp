@@ -14,9 +14,7 @@ FILES :=              \
     FunctionTuple     \
     FunctionDict      \
     GlobalVariables   \
-    ClassVariables    \
-    InstanceVariables \
-    Methods           \
+    Classes           \
     Iteration         \
     Yield             \
     Lambda            \

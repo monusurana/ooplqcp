@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#pylint: disable = redefined-outer-name, global-statement
+
 # ------------------
 # GlobalVariables.py
 # ------------------
@@ -16,6 +18,7 @@ def f () :
     assert v1 == 1                                                                  # global
 
     v2 = 12 # local
+    assert v2 == 12
 
     try :
         assert v3 == 3                                                              # local
