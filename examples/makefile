@@ -8,16 +8,20 @@ FILES :=              \
     Types             \
     Operators         \
     Variables         \
-    Iteration         \
-    Yield             \
-    Lambda            \
-    Comprehensions    \
-    Iterables         \
     FunctionKeywords  \
     FunctionDefaults  \
     FunctionUnpacking \
     FunctionTuple     \
     FunctionDict      \
+    GlobalVariables   \
+    ClassVariables    \
+    InstanceVariables \
+    Methods           \
+    Iteration         \
+    Yield             \
+    Lambda            \
+    Comprehensions    \
+    Iterables         \
     Sequences         \
     Lists             \
     Strings           \

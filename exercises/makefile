@@ -6,8 +6,8 @@ FILES :=            \
 #    ReduceT         \
 #    DigitsIteratorT \
 #    DigitsT         \
-#    MapT            \
 #    ComplexT        \
+#    MapT            \
 #    Reduce2T        \
 #    TheatreSquareT
 

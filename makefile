@@ -28,16 +28,20 @@ pull:
     --include "Types.py"                     \
     --include "Operators.py"                 \
     --include "Variables.py"                 \
-    --include "Iteration.py"                 \
-    --include "Yield.py"                     \
-    --include "Lambda.py"                    \
-    --include "Comprehensions.py"            \
-    --include "Iterables.py"                 \
     --include "FunctionKeywords.py"          \
     --include "FunctionDefaults.py"          \
     --include "FunctionUnpacking.py"         \
     --include "FunctionTuple.py"             \
     --include "FunctionDict.py"              \
+    --include "GlobalVariables.py"           \
+    --include "ClassVariables.py"            \
+    --include "InstanceVariables.py"         \
+    --include "Methods.py"                   \
+    --include "Iteration.py"                 \
+    --include "Yield.py"                     \
+    --include "Lambda.py"                    \
+    --include "Comprehensions.py"            \
+    --include "Iterables.py"                 \
     --include "Sequences.py"                 \
     --include "Lists.py"                     \
     --include "Strings.py"                   \
@@ -52,8 +56,8 @@ pull:
     --include "ReduceT.py"                   \
     --include "DigitsIteratorT.py"           \
     --include "DigitsT.py"                   \
-    --include "MapT.py"                      \
     --include "ComplexT.py"                  \
+    --include "MapT.py"                      \
     --include "Reduce2T.py"                  \
     --include "TheatreSquareT.py"            \
     --exclude "*"                            \
