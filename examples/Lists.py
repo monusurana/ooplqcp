@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#pylint: disable = redefined-variable-type
+
 # --------
 # Lists.py
 # --------
@@ -7,33 +9,33 @@
 print("Lists.py")
 
 a = [2, 3, "abc"]
-assert type(a) ==     list
-assert a       is not [2, 3, 'abc']
-assert a       ==     [2, 3, 'abc']
-assert a       !=     [3, 2, 'abc']
-assert a       !=     (2, 3, 'abc')
+assert isinstance(a, list)
+assert a is not [2, 3, 'abc']
+assert a ==     [2, 3, 'abc']
+assert a !=     [3, 2, 'abc']
+assert a !=     (2, 3, 'abc')
 
 a = (2, 3, "abc")
-assert type(a) is     tuple
-assert a       is not (2, 3, 'abc')
-assert a       ==     (2, 3, 'abc')
-assert a       !=     (3, 2, 'abc')
-assert a       !=     [2, 3, 'abc']
+assert isinstance(a, tuple)
+assert a is not (2, 3, 'abc')
+assert a ==     (2, 3, 'abc')
+assert a !=     (3, 2, 'abc')
+assert a !=     [2, 3, 'abc']
 
 a = list({2, 3.45, "abc"})
-assert type(a) is list
+assert isinstance(a, list)
 assert set(a)  == {2, 3.45, "abc"}  # ?
 
 a = list({2 : "ghi", 3.45 : 3, "abc" : 6.78})
-assert type(a) is list
+assert isinstance(a, list)
 assert set(a)  == {2, 3.45, "abc"}             # ?
 
 a = tuple({2, 3.45, "abc"})
-assert type(a) is tuple
+assert isinstance(a, tuple)
 assert set(a)  == {2, 3.45, "abc"}  # ?
 
 a = tuple({2 : "ghi", 3.45 : 3, "abc" : 6.78})
-assert type(a) is tuple
+assert isinstance(a, tuple)
 assert set(a) == {2, 3.45, "abc"}              # ?
 
 assert [] is not []
@@ -61,7 +63,7 @@ try :
     v = a.pop(2)
     assert False
 except IndexError as e:
-    assert type(e.args) is tuple
+    assert isinstance(e.args, tuple)
     assert len(e.args)  == 1
     assert e.args       == ('pop index out of range',)
 
@@ -76,22 +78,22 @@ try :
     a.remove(4)
     assert False
 except ValueError as e:
-    assert type(e.args) is tuple
+    assert isinstance(e.args, tuple)
     assert len(e.args)  == 1
     assert e.args       == ('list.remove(x): x not in list',)
 
-a = [2, 3, 4];
+a = [2, 3, 4]
 del a[1]
 assert a == [2, 4]
 try :
     del a[2]
     assert False
 except IndexError as e:
-    assert type(e.args) is tuple
+    assert isinstance(e.args, tuple)
     assert len(e.args)  == 1
     assert e.args       == ('list assignment index out of range',)
 
-a = [2, 3, 4];
+a = [2, 3, 4]
 b = list(a)
 assert a is not b
 assert a ==     b

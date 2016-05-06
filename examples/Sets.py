@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#pylint: disable = duplicate-key, redefined-variable-type, too-few-public-methods
+
 # -------
 # Sets.py
 # -------
@@ -7,7 +9,7 @@
 print("Sets.py")
 
 s = {2, 3.45, "abc", 2}
-assert type(s) is     set
+assert isinstance(s, set)
 assert len(s)  ==     3
 assert s       is not {2, 3.45, 'abc'}
 assert s       ==     {2, 3.45, 'abc'}
@@ -15,7 +17,7 @@ assert s       ==     {2, 'abc', 3.45}
 assert s       ==     frozenset((2, 3.45, 'abc'))
 
 s = frozenset([2, 3.45, "abc", 2])
-assert type(s)      is     frozenset
+assert isinstance(s, frozenset)
 assert len(s)       ==     3
 assert s            is not frozenset([2, 3.45, 'abc'])
 assert s            ==     frozenset([2, 3.45, 'abc'])
@@ -23,16 +25,16 @@ assert s            ==     frozenset((2, 'abc', 3.45))
 assert s            ==     {2, 3.45, 'abc'}
 
 s = set({2 : "ghi", 3.45 : 3, "abc" : 6.78, 2 : "def"})
-assert type(s) is set
+assert isinstance(s, set)
 assert s       == {2, 3.45, "abc"}
 
 s = frozenset({2 : "ghi", 3.45 : 3, "abc" : 6.78, 2 : "def"})
-assert type(s) is frozenset
+assert isinstance(s, frozenset)
 assert s       == frozenset([2, 3.45, "abc"])
 
-set()       is not set()
-set()       ==     set()
-frozenset() is     frozenset()
+assert set()       is not set()
+assert set()       ==     set()
+assert frozenset() is     frozenset()
 
 s = {2, 3.45, "abc", 2}
 t = set(s)
@@ -78,7 +80,7 @@ try :
     s.remove("abc")
     assert False
 except KeyError as e:
-    assert type(e.args) is tuple
+    assert isinstance(e.args, tuple)
     assert len(e.args)  == 1
     assert e.args       == ("abc",)
 
@@ -104,10 +106,8 @@ assert (t - s) == frozenset([4, 6])
 assert (s ^ t) == frozenset([3, 5, 4, 6])       # symmetric difference
 assert (t ^ s) == frozenset([3, 5, 4, 6])
 
-assert False is not 0
-assert False ==     0
-assert True  is not 1
-assert True  ==     1
+assert not 0
+assert     1
 assert 2     is not 2.0
 assert 2     ==     2.0
 s = {False, 0, True, 1, 2, 2.0}

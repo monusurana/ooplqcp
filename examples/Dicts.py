@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#pylint: disable = duplicate-key, redefined-variable-type, too-few-public-methods
+
 # --------
 # Dicts.py
 # --------
@@ -9,35 +11,35 @@ from collections import defaultdict
 print("Dicts.py")
 
 d = {2 : "ghi", 3.45 : 3, "abc" : 6.78, 2 : "def"}
-assert type(d) ==     dict
+assert isinstance(d, dict)
 assert len(d)  ==     3
 assert d       is not {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert d       ==     {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert d       ==     {2 : "def", "abc" : 6.78, 3.45 : 3}
 
 d = dict(((2, "ghi"), (3.45, 3), ("abc", 6.78), (2, "def")))
-assert type(d) ==     dict
+assert isinstance(d, dict)
 assert len(d)  ==     3
 assert d       is not {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert d       ==     {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert d       ==     {2 : "def", "abc" : 6.78, 3.45 : 3}
 
 d = dict([[2, "ghi"], [3.45, 3], ["abc", 6.78], [2, "def"]])
-assert type(d) ==     dict
+assert isinstance(d, dict)
 assert len(d)  ==     3
 assert d       is not {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert d       ==     {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert d       ==     {2 : "def", "abc" : 6.78, 3.45 : 3}
 
-{} is not {}
-{} ==     {}
+assert {} is not {}
+assert {} ==     {}
 
 d = {}
 try :
-    assert d[2] == None
+    assert d[2] is None
     assert False
 except KeyError as e:
-    assert type(e.args) is tuple
+    assert isinstance(e.args, tuple)
     assert len(e.args)  == 1
     assert e.args       == (2,)
 d[2]     = "ghi"
@@ -52,7 +54,7 @@ try :
     d.pop("abc")
     assert False
 except KeyError as e:
-    assert type(e.args) is tuple
+    assert isinstance(e.args, tuple)
     assert len(e.args)  == 1
     assert e.args       == ("abc",)
 
@@ -79,8 +81,8 @@ assert 3     in d
 assert 5 not in d
 
 d = {2 : "abc", 3 : None, 4 : "ghi"}
-assert d.get(3) == None
-assert d.get(5) == None
+assert d.get(3) is None
+assert d.get(5) is None
 
 t = ("a", "b", "c", "a")
 u = (2, 3, 4, 5)
@@ -126,10 +128,8 @@ e = d.copy()
 assert d is not e
 assert d ==     e
 
-assert False is not 0
-assert False ==     0
-assert True  is not 1
-assert True  ==     1
+assert not 0
+assert     1
 assert 2     is not 2.0
 assert 2     ==     2.0
 d = {False : "abc", 0 : "def", True : "ghi", 1 : "jkl", 2 : "mno", 2.0 : "pqr"}

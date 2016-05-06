@@ -6,22 +6,22 @@
 
 print("Strings.py")
 
-assert type('abc') is str
+assert isinstance('abc', str)
 assert len('abc')  == 3
 
-assert type("abc") is str
+assert isinstance("abc", str)
 assert len("abc")  == 3
 
-assert type(r'abc') is str
+assert isinstance(r'abc', str)
 assert len(r'abc')  == 3
 
-assert type(r"abc") is str
+assert isinstance(r"abc", str)
 assert len(r"abc")  == 3
 
-assert type('''abc''') is str
+assert isinstance('''abc''', str)
 assert len('''abc''')  == 3
 
-assert type("""abc""") is str
+assert isinstance("""abc""", str)
 assert len("""abc""")  == 3
 
 assert len('a\nb') == 3
