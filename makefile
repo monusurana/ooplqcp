@@ -38,9 +38,9 @@ pull:
     --include "GlobalVariables.py"           \
     --include "Classes.py"                   \
     --include "Iteration.py"                 \
-    --include "Yield.py"                     \
     --include "Lambda.py"                    \
     --include "Comprehensions.py"            \
+    --include "Yield.py"                     \
     --include "Iterables.py"                 \
     --include "Sequences.py"                 \
     --include "Lists.py"                     \
@@ -58,11 +58,11 @@ pull:
     --include "FactorialT.py"                \
     --include "Reduce.py"                    \
     --include "ReduceT.py"                   \
+    --include "Reduce2T.py"                  \
+    --include "ComplexT.py"                  \
     --include "DigitsIteratorT.py"           \
     --include "DigitsT.py"                   \
-    --include "ComplexT.py"                  \
     --include "MapT.py"                      \
-    --include "Reduce2T.py"                  \
     --include "TheatreSquareT.py"            \
     --exclude "*"                            \
     ../../../exercises/python/ exercises

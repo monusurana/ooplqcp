@@ -1,14 +1,14 @@
 FILES :=            \
     IsPrime1T       \
+    IsPrime2T       \
+    FactorialT      \
+    ReduceT         \
 
-#    IsPrime2T       \
-#    FactorialT      \
-#    ReduceT         \
+#    Reduce2T        \
 #    DigitsIteratorT \
 #    DigitsT         \
 #    ComplexT        \
 #    MapT            \
-#    Reduce2T        \
 #    TheatreSquareT
 
 %.pyt: %.py

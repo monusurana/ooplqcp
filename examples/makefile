@@ -18,9 +18,9 @@ FILES :=              \
     GlobalVariables   \
     Classes           \
     Iteration         \
-    Yield             \
     Lambda            \
     Comprehensions    \
+    Yield             \
     Iterables         \
     Sequences         \
     Lists             \
