@@ -10,6 +10,7 @@ FILES :=              \
     Variables         \
     Copy              \
     Cache             \
+    Iteration         \
     FunctionKeywords  \
     FunctionDefaults  \
     FunctionUnpacking \
@@ -17,7 +18,6 @@ FILES :=              \
     FunctionDict      \
     GlobalVariables   \
     Classes           \
-    Iteration         \
     Lambda            \
     Comprehensions    \
     Yield             \

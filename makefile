@@ -30,6 +30,7 @@ pull:
     --include "Variables.py"                 \
     --include "Copy.py"                      \
     --include "Cache.py"                     \
+    --include "Iteration.py"                 \
     --include "FunctionKeywords.py"          \
     --include "FunctionDefaults.py"          \
     --include "FunctionUnpacking.py"         \
@@ -37,7 +38,6 @@ pull:
     --include "FunctionDict.py"              \
     --include "GlobalVariables.py"           \
     --include "Classes.py"                   \
-    --include "Iteration.py"                 \
     --include "Lambda.py"                    \
     --include "Comprehensions.py"            \
     --include "Yield.py"                     \
@@ -58,6 +58,7 @@ pull:
     --include "FactorialT.py"                \
     --include "Reduce.py"                    \
     --include "ReduceT.py"                   \
+    --include "Reduce2.py"                   \
     --include "Reduce2T.py"                  \
     --include "ComplexT.py"                  \
     --include "DigitsIteratorT.py"           \
