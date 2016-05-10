@@ -62,8 +62,8 @@ pull:
     --include "Reduce2T.py"                  \
     --include "ComplexT.py"                  \
     --include "DigitsIteratorT.py"           \
-    --include "DigitsT.py"                   \
     --include "MapT.py"                      \
+    --include "DigitsT.py"                   \
     --include "TheatreSquareT.py"            \
     --exclude "*"                            \
     ../../../exercises/python/ exercises

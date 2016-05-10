@@ -7,8 +7,8 @@ FILES :=            \
 #    Reduce2T        \
 #    ComplexT        \
 #    DigitsIteratorT \
-#    DigitsT         \
 #    MapT            \
+#    DigitsT         \
 #    TheatreSquareT
 
 %.pyt: %.py
