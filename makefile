@@ -28,6 +28,8 @@ pull:
     --include "Types.py"                     \
     --include "Operators.py"                 \
     --include "Variables.py"                 \
+    --include "Copy.py"                      \
+    --include "Cache.py"                     \
     --include "FunctionKeywords.py"          \
     --include "FunctionDefaults.py"          \
     --include "FunctionUnpacking.py"         \

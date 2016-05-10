@@ -62,6 +62,12 @@ assert isinstance(set, type)
 assert issubclass(set, set)
 assert issubclass(set, object)
 
+s = frozenset([2, "abc", 3.45])
+assert isinstance(s,         frozenset)
+assert isinstance(frozenset, type)
+assert issubclass(frozenset, frozenset)
+assert issubclass(frozenset, object)
+
 d = {2 : "def", 3.45 : 3, "abc" : 6.78}
 assert isinstance(d,    dict)
 assert isinstance(dict, type)

@@ -8,6 +8,8 @@ FILES :=              \
     Types             \
     Operators         \
     Variables         \
+    Copy              \
+    Cache             \
     FunctionKeywords  \
     FunctionDefaults  \
     FunctionUnpacking \

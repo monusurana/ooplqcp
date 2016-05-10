@@ -6,6 +6,8 @@
 # Variables.py
 # ------------
 
+from copy import copy
+
 print("Variables.py")
 
 i = 2
@@ -35,8 +37,20 @@ b[1] += 1
 assert a[1] == 3
 assert b[1] == 4
 
+a = [2, 3, 4]
+b = copy(a)
+assert a is not b
+assert a ==     b
+b[1] += 1
+assert a[1] == 3
+assert b[1] == 4
+
 a = (2, 3, 4)
 b = a[:]
+assert a is b
+
+a = (2, 3, 4)
+b = copy(a)
 assert a is b
 
 a = [2, 3, 4]
