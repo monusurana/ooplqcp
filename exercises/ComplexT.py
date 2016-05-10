@@ -15,7 +15,7 @@ class MyUnitTests (TestCase) :
     def setUp (self) :
         self.a = [
             my_complex,
-               complex]
+            complex]
 
     def test_01 (self) :
         for c in self.a :

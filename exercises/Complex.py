@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#pylint: disable = too-few-public-methods
+
 # ----------
 # Complex.py
 # ----------
@@ -12,6 +14,8 @@ class my_complex :
         self.imag = imag
 
     def __add__ (self, rhs) :
+        if not isinstance(rhs, my_complex) :
+            raise TypeError()
         return my_complex(self.real + rhs.real, self.imag + rhs.imag)
 
     def __eq__ (self, rhs) :
@@ -23,9 +27,13 @@ class my_complex :
         return ("(%s%sj)" if self.imag < 0 else "(%s+%sj)") % (self.real, self.imag)
 
     def __sub__ (self, rhs) :
+        if not isinstance(rhs, my_complex) :
+            raise TypeError()
         return my_complex(self.real - rhs.real, self.imag - rhs.imag)
 
     def __isub__ (self, rhs) :
+        if not isinstance(rhs, my_complex) :
+            raise TypeError()
         return my_complex(self.real - rhs.real, self.imag - rhs.imag)
 
     def conjugate (self) :
