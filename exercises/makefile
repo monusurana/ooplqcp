@@ -1,12 +1,12 @@
 FILES :=            \
-    IsPrime1T       \
-    IsPrime2T       \
-    FactorialT      \
-    ReduceT         \
-    Reduce2T        \
-    ComplexT        \
-    DigitsIteratorT
+    IsPrime1T
 
+#    IsPrime2T       \
+#    FactorialT      \
+#    ReduceT         \
+#    Reduce2T        \
+#    ComplexT        \
+#    DigitsIteratorT
 #    MapT            \
 #    DigitsT         \
 #    TheatreSquareT
