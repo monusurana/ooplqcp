@@ -52,6 +52,8 @@ pull:
 	@rsync -r -t -u -v --delete              \
     --include "IsPrime1.py"                  \
     --include "IsPrime1T.py"                 \
+    --include "IsPrime2.py"                  \
+    --include "IsPrime2T.py"                 \
     --include "FactorialT.py"                \
     --include "ReduceT.py"                   \
     --include "Reduce2T.py"                  \
