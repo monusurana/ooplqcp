@@ -28,11 +28,9 @@ FILES :=              \
     Sets              \
     Dicts
 
-%.pyt: %.py
-	-pylint $<
-
 %.pyx: %.py
 	./$<
+	-pylint $<
 
 .pylintrc:
 	pylint --disable=bad-whitespace,missing-docstring,invalid-name,locally-disabled,pointless-string-statement --reports=n --generate-rcfile > $@
@@ -44,4 +42,4 @@ clean:
 scrub:
 	rm -f  .pylintrc
 
-test: .pylintrc $(FILES:=.pyt) $(FILES:=.pyx)
+test: .pylintrc $(FILES:=.pyx)

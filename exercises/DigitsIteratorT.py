@@ -42,10 +42,12 @@ class MyUnitTests (TestCase) :
     def test_6 (self) :
         x = Digits_Iterator(234, 10)
         self.assertEqual(reduce(add, x, 0), 9)
+        self.assertEqual(reduce(add, x, 0), 0)
 
     def test_7 (self) :
         x = Digits_Iterator(234, 10)
         self.assertEqual(reduce(mul, x, 1), 24)
+        self.assertEqual(reduce(mul, x, 1),  1)
 
 if __name__ == "__main__" :
     main()
