@@ -15,7 +15,7 @@ class my_complex :
 
     def __add__ (self, rhs) :
         if not isinstance(rhs, my_complex) :
-            raise TypeError()
+            raise TypeError
         return my_complex(self.real + rhs.real, self.imag + rhs.imag)
 
     def __eq__ (self, rhs) :
@@ -28,12 +28,12 @@ class my_complex :
 
     def __sub__ (self, rhs) :
         if not isinstance(rhs, my_complex) :
-            raise TypeError()
+            raise TypeError
         return my_complex(self.real - rhs.real, self.imag - rhs.imag)
 
     def __isub__ (self, rhs) :
         if not isinstance(rhs, my_complex) :
-            raise TypeError()
+            raise TypeError
         return my_complex(self.real - rhs.real, self.imag - rhs.imag)
 
     def conjugate (self) :
