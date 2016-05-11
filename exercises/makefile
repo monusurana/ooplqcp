@@ -2,10 +2,10 @@ FILES :=            \
     IsPrime1T       \
     IsPrime2T       \
     FactorialT      \
-    ReduceT
+    ReduceT         \
     Reduce2T        \
     ComplexT        \
-    DigitsIteratorT \
+    DigitsIteratorT
 
 #    MapT            \
 #    DigitsT         \

@@ -70,7 +70,7 @@ pull:
     ../../../exercises/python/ exercises
 
 push:
-#	make clean
+	make clean
 	@echo
 	git add .travis.yml
 	git add examples
