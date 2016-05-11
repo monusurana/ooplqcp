@@ -3,10 +3,10 @@ FILES :=            \
     IsPrime2T       \
     FactorialT      \
     ReduceT
+    Reduce2T        \
+    ComplexT        \
+    DigitsIteratorT \
 
-#    Reduce2T        \
-#    ComplexT        \
-#    DigitsIteratorT \
 #    MapT            \
 #    DigitsT         \
 #    TheatreSquareT
