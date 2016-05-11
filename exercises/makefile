@@ -12,9 +12,9 @@ FILES :=            \
 #    TheatreSquareT
 
 %.pyx: %.py
+	-pylint $<
 	coverage3 run --branch $<
 	coverage3 report -m
-	-pylint $<
 
 .pylintrc:
 	pylint --disable=bad-whitespace,missing-docstring,invalid-name,locally-disabled,pointless-string-statement --reports=n --generate-rcfile > $@
