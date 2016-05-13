@@ -58,6 +58,7 @@ pull:
     --include "FactorialT.py"                \
     --include "Reduce.py"                    \
     --include "ReduceT.py"                   \
+    --include "Reduce2.py"                   \
     --include "Reduce2T.py"                  \
     --include "ComplexT.py"                  \
     --include "DigitsIteratorT.py"           \
