@@ -24,27 +24,27 @@ class MyUnitTests (TestCase) :
     def test_1 (self) :
         for f in self.a :
             with self.subTest() :
-                self.assertEqual(f(add, [],        0),  0)
+                self.assertEqual(f(add, [2, 3, 4], 0),  9)
 
     def test_2 (self) :
         for f in self.a :
             with self.subTest() :
-                self.assertEqual(f(add, [2, 3, 4], 0),  9)
+                self.assertEqual(f(sub, [2, 3, 4], 0), -9)
 
     def test_3 (self) :
         for f in self.a :
             with self.subTest() :
-                self.assertEqual(f(sub, [2, 3, 4], 0), -9)
+                self.assertEqual(f(sub, [2, 3, 4], 1), -8)
 
     def test_4 (self) :
         for f in self.a :
             with self.subTest() :
-                self.assertEqual(f(sub, [2, 3, 4], 1), -8)
+                self.assertEqual(f(add, [2],       1),  3)
 
     def test_5 (self) :
         for f in self.a :
             with self.subTest() :
-                self.assertEqual(f(sub, [2]),           2)
+                self.assertEqual(f(None, [],       2),  2)
 
     def test_6 (self) :
         for f in self.a :
@@ -54,7 +54,12 @@ class MyUnitTests (TestCase) :
     def test_7 (self) :
         for f in self.a :
             with self.subTest() :
-                self.assertRaises(TypeError, f, sub, [])
+                self.assertEqual(f(None, [2]),          2)
+
+    def test_8 (self) :
+        for f in self.a :
+            with self.subTest() :
+                self.assertRaises(TypeError, f, None, [])
 
 if __name__ == "__main__" :
     main()

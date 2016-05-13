@@ -5,6 +5,7 @@
 # ----------
 
 # https://docs.python.org/3/library/stdtypes.html#typesnumeric
+# http://www.rafekettler.com/magicmethods.html
 
 from unittest import main, TestCase
 
