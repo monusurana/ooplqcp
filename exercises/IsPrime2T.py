@@ -42,10 +42,17 @@ if __name__ == "__main__" :
     main()
 
 """ #pragma: no cover
-% IsPrime2T.py
+% coverage3 run --branch IsPrime2T.py
 .........
 ----------------------------------------------------------------------
 Ran 9 tests in 0.001s
 
 OK
+coverage3 report -m
+Name           Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------
+IsPrime2.py       11      0      8      0   100%
+IsPrime2T.py      23      0      0      0   100%
+----------------------------------------------------------
+TOTAL             34      0      8      0   100%
 """

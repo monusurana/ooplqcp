@@ -45,7 +45,7 @@ assert j == 3
 
 i = 4
 j = 2
-k = i / j               # true division
+k = i / j                   # true division
 assert i == 4
 assert j == 2
 assert isinstance(k, float)
@@ -60,7 +60,7 @@ assert j       == 2
 
 i = 5
 j = 2
-k = i // j            # floor division
+k = i // j                # floor division
 assert i == 5
 assert j == 2
 assert isinstance(k, int)
@@ -75,7 +75,7 @@ assert j == 2
 
 i = 5.0
 j = 2
-k = i // j              # floor division
+k = i // j                  # floor division
 assert i == 5.0
 assert j == 2
 assert isinstance(k, float)
@@ -199,7 +199,7 @@ assert j == 10
 
 i = 8
 j = not i & (i - 1)
-assert j is True      # power of 2
+assert j is True    # power of 2
 
 i = 13           # 1101
 j =  0

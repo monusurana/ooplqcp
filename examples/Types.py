@@ -32,6 +32,7 @@ assert issubclass(float, float)
 assert issubclass(float, object)
 
 c = 2 + 3j
+c = complex(2, 3)
 assert isinstance(c,       complex)
 assert isinstance(complex, type)
 assert issubclass(complex, complex)
@@ -39,24 +40,28 @@ assert issubclass(complex, object)
 
 s = 'abc'
 s = "abc"
+s = str(["a", "b", "c"])
 assert isinstance(s,   str)
 assert isinstance(str, type)
 assert issubclass(str, str)
 assert issubclass(str, object)
 
 l = [2, "abc", 3.45]
+l = list((2, "abc", 3.45))
 assert isinstance(l,    list)
 assert isinstance(list, type)
 assert issubclass(list, list)
 assert issubclass(list, object)
 
 t = (2, "abc", 3.45)
+t = tuple([2, "abc", 3.45])
 assert isinstance(t,     tuple)
 assert isinstance(tuple, type)
 assert issubclass(tuple, tuple)
 assert issubclass(tuple, object)
 
 s = {2, "abc", 3.45}
+s = set([2, "abc", 3.45])
 assert isinstance(s,   set)
 assert isinstance(set, type)
 assert issubclass(set, set)
@@ -69,6 +74,7 @@ assert issubclass(frozenset, frozenset)
 assert issubclass(frozenset, object)
 
 d = {2 : "def", 3.45 : 3, "abc" : 6.78}
+d = dict([(2, "def"), (3.45, 3), ("abc", 6.78)])
 assert isinstance(d,    dict)
 assert isinstance(dict, type)
 assert issubclass(dict, dict)
@@ -83,8 +89,7 @@ assert issubclass(FunctionType, object)
 
 class A :
     def __init__ (self, i, f) :
-        self.i = i
-        self.f = f
+        pass
 
 x = A(2, 3.45)
 assert isinstance(x, A)

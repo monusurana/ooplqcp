@@ -63,16 +63,16 @@ assert a is b
 a = [2, 3, 4]
 b = a
 assert a is b
-b = b + [5]
-assert a == [2, 3, 4]
-assert b == [2, 3, 4, 5]
+b += (5,)
+assert a == [2, 3, 4, 5]
+assert a is b
 
 a = [2, 3, 4]
 b = a
 assert a is b
-b += (5,)
-assert a == [2, 3, 4, 5]
-assert a is b
+b = b + [5]
+assert a == [2, 3, 4]
+assert b == [2, 3, 4, 5]
 
 a = [2, 3, 4]
 b = a
@@ -89,14 +89,14 @@ assert b == (2, 3, 4, 5)
 a = (2, 3, 4)
 b = a
 assert a is b
-b = b + (5,)
-assert a == (2, 3, 4)
-assert b == (2, 3, 4, 5)
+#b += [5]     # TypeError: can only concatenate tuple (not "list") to tuple
 
 a = (2, 3, 4)
 b = a
 assert a is b
-#b += [5]     # TypeError: can only concatenate tuple (not "list") to tuple
+b = b + (5,)
+assert a == (2, 3, 4)
+assert b == (2, 3, 4, 5)
 
 a = (2, 3, 4)
 b = a

@@ -48,19 +48,7 @@ for v in a :
     v += "x"                      # ?
 assert a == ["abc", "def", "ghi"]
 
-a = ["abc", "def", "ghi"]
-s = ""
-for v in a :
-    s += v
-assert s == "abcdefghi"
-
-a = [[2, "abc"], [3, "def"], [4, "ghi"]]
-s = 0
-for u, v in a :
-    s += u
-assert s == 9
-
-a = [(2, "abc"), (3, "def"), (4, "ghi")]
+a = [[2, "abc"], (3, "def"), [4, "ghi"]]
 s = 0
 for u, v in a :
     s += u

@@ -17,12 +17,12 @@ Python is procedural, object-oriented, dynamically typed, and garbage collected.
 
 
 % python --version
-Python 2.7.6
+Python 2.7.10
 
 
 
 % python3 --version
-Python 3.4.0
+Python 3.5.1
 
 
 
@@ -43,8 +43,8 @@ Nothing to be done.
 
 
 % python3
-Python 3.4.0 (default, Jun 19 2015, 14:20:21)
-[GCC 4.8.2] on linux
+Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> import Hello
@@ -67,8 +67,8 @@ Nothing to be done.
 
 
 % python3
-Python 3.4.0 (default, Apr 11 2014, 13:05:11)
-[GCC 4.8.2] on linux
+Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> help()
@@ -177,8 +177,8 @@ has the same effect as typing a particular string at the help> prompt.
 
 
 % python3
-Python 3.4.0 (default, Apr 11 2014, 13:05:11)
-[GCC 4.8.2] on linux
+Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> import this
