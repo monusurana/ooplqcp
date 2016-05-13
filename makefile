@@ -64,6 +64,7 @@ pull:
     --include "ComplexT.py"                  \
     --include "DigitsIterator.py"            \
     --include "DigitsIteratorT.py"           \
+    --include "Map.py"                       \
     --include "MapT.py"                      \
     --include "DigitsT.py"                   \
     --include "TheatreSquareT.py"            \
