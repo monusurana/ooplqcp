@@ -66,6 +66,7 @@ pull:
     --include "DigitsIteratorT.py"           \
     --include "Map.py"                       \
     --include "MapT.py"                      \
+    --include "Digits.py"                    \
     --include "DigitsT.py"                   \
     --include "TheatreSquareT.py"            \
     --exclude "*"                            \
