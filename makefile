@@ -62,6 +62,7 @@ pull:
     --include "Reduce2T.py"                  \
     --include "Complex.py"                   \
     --include "ComplexT.py"                  \
+    --include "DigitsIterator.py"            \
     --include "DigitsIteratorT.py"           \
     --include "MapT.py"                      \
     --include "DigitsT.py"                   \
